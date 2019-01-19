@@ -116,11 +116,14 @@
             <version>1.2.46</version>
         </dependency>
 
-        <!-- tomcat，设置provided，在打包的时候不会包含这个jar -->
+        <!--
+            tomcat，设置provided，在打包的时候不会包含这个jar
+            tomcat，设置compile可以正常工作
+        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
